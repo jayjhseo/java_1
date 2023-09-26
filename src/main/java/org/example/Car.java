@@ -1,44 +1,12 @@
 package org.example;
 
 
-abstract class 전사 {
-    String 이름;
-    무기 a무기;
-
-    void 공격 () {
-        a무기.실행(this.이름);
+class 사람 {
+    사람() {
+        System.out.println("사람이 태어났습니다");
+    }
+    사람 (int x) {
+        System.out.println("태어나서부터 " + x +"살인 사람이 태어났습니다.");
     }
 }
-class 홍길동 extends 전사 {
-    홍길동() {
-        이름 = "홍길동";
-    }
-}
-class 홍길순 extends 전사 {
-    홍길순() {
-        이름 = "홍길순";
-        a무기 = new 칼();
-    }
-}
-
-class 무기 {
-    String 무기이름;
-    void 실행(String 사용자이름) {
-        System.out.println(사용자이름 + "이(가)" + 무기이름 + "(으)로 공격합니다.");
-    }
-}
-class 활 extends 무기 {
-    활() {
-        무기이름 = "활";
-    }
-}
-class 칼 extends 무기 {
-    칼() {
-        무기이름 = "칼";
-    }
-}
-class 창 extends 무기 {
-    창() {
-        무기이름 = "창";
-    }
-}
+// 오버로딩, 오버라이딩 둘의 차이 (면접)
