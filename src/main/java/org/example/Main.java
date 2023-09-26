@@ -2,7 +2,7 @@ package org.example;
 
 
 import com.sun.jdi.PathSearchingVirtualMachine;
-
+//set,get
 class Main {
     public static void main(String[] args) {
         사람 a사람 = new 사람();
